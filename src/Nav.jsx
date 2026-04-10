@@ -5,7 +5,7 @@ import menu from './assets/hamburgar.svg'
 let aStyle= `uppercase text-white text-[13px] font-bold cursor-[url('/src/assets/pointer.svg'),_auto] hover:text-[#D87D4A] transition `
 export default function Nav() {
   return (
-    <header className='bg-[#0E0E0E] w-full flex h-20     justify-center fixed'>
+    <header className='bg-[#0E0E0E] w-full flex h-20     justify-center fixed z-30'>
         <div className="container justify-between items-center flex border-b border-b-white/20  p-5 ">
         <img src={logo} alt="" className='hidden lg:flex   '/>
         <div className="icons  md:w-[30%] gap-5 hidden md:flex lg:hidden ">
