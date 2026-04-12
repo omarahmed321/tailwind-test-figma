@@ -10,7 +10,7 @@ export default function App() {
       
        
 <Nav />
-<div className="background z-[-2] bg-[#101010] w-full h-dvh absolute"></div>
+<div className="container h-full flex">
 <aside className='   justify-start items-center bg-[#101010] hidden lg:flex '>
   <div className="content w-[50%] flex flex-col gap-6 items-start justify-center">
     <p className='uppercase text-[#FFFFFF]/49.5 text-[14px] tracking-[10px]'>new product</p>
@@ -33,6 +33,9 @@ export default function App() {
 </div>
 
 <img src={headphone} alt="" className=' hidden lg:flex '/>
+</div>
+<div className="background z-[-2] bg-[#101010] w-full h-dvh absolute"></div>
+
 
 
 
