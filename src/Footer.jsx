@@ -22,9 +22,10 @@ const InstagramIcon = ({ className }) => (
 let aStyle = "font-bold text-[13px] leading-6.25 tracking-[2px] uppercase cursor-[url('/src/assets/pointer.svg'),_auto] hover:text-[#D87D4A] transition "
 export default function () {
   return (
-   <div className="Footer w-full  bg-[#101010] relative flex flex-col items-center text-center gap-12 md:gap-8 md:items-start pb-9.5 md:px-10 md:pb-11.5 lg:px-[10%] lg:pb-12 ">
-    <div className=" absolute top-0 bg-[#D87D4A] w-[20%] h-1.25  left-[50%] -translate-x-1/2 md:left-30 lg:w-25 lg:left-[12.5%]"></div>
-<div className="introline  lg:flex-row w-full  hidden lg:flex">
+   <div className="Footer w-full  bg-[#101010]  pb-9.5 md:px-10 md:pb-11.5 lg:px-[10%] lg:pb-12  ">
+    <div className="container mx-auto  relative flex flex-col items-center text-center gap-12 md:gap-8 md:items-start">
+          <div className=" absolute top-0 bg-[#D87D4A] w-[20%] h-1.25  left-[40%]  md:left-0 lg:w-25 lg:left-0"></div>
+<div className="introline  lg:flex-row w-full  hidden lg:flex mb-9">
         <img src={audiophile} alt="" className='mt-12 lg:mt-18.75 '/>
           <div className="links flex flex-col  gap-4 text-center md:flex-row md:gap-8.5 ml-auto mt-18.75">
         <a href="" className={aStyle} >Home</a>
@@ -33,7 +34,7 @@ export default function () {
         <a href="" className={aStyle}>earphones</a>
     </div>
 </div>
-    <img src={audiophile} alt="" className='mt-12 lg:mt-18.75 lg:hidden'/>
+    <img src={audiophile} alt="" className='mt-12 lg:mt-18.75 lg:hidden mx-auto md:mr-auto md:mx-0 '/>
     <div className="links flex flex-col  gap-4 text-center md:flex-row md:gap-8.5 lg:hidden">
         <a href="" className={aStyle} >Home</a>
         <a href="" className={aStyle}>headphones</a>
@@ -58,6 +59,8 @@ export default function () {
     <TwitterIcon className="text-white hover:text-[#D87D4A] transition duration-300 cursor-[url('/src/assets/pointer.svg'),auto]"/>
     <InstagramIcon className="text-white hover:text-[#D87D4A] transition duration-300 cursor-[url('/src/assets/pointer.svg'),auto]"/>
 </div>
+
+
 <div className="lastLine hidden md:flex w-full lg:hidden">
     <p className='font-bold leading-6.25 text-[15px] text-white/50'>Copyright 2021. All Rights Reserved</p>
 <div className="icons flex gap-4 ml-auto">
@@ -66,6 +69,8 @@ export default function () {
     <InstagramIcon className="text-white hover:text-[#D87D4A] transition duration-300 cursor-[url('/src/assets/pointer.svg'),auto]"/>
 </div>
 </div>
+    </div>
+
 </div>
   )
 }
