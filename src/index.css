@@ -6,6 +6,10 @@
 font-family: "Manrope", sans-serif;
 
  }
+ body{
+    background: white;
+    z-index: -5;
+ }
 
 
 @theme{
